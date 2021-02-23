@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.album {
+  padding: 1em;
+  width: 650px;
+  background: rgb(37, 36, 41);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  // one
+  &__title {
+    margin-bottom: 1em;
+  }
+  // two
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed rgb(201, 201, 201);
+    border-right: none;
+    border-left: none;
+  }
+  // trhee
+  footer {
+    position: relative;
+  }
+  &__description {
+    width: 60%;
+    padding: 1em 0;
+    flex-grow: 3;
+  }
+
+  &__img {
+    max-width: 200px;
+    height: auto;
+  }
+  &__released {
+    padding: 0 2em;
+    font-size: 0.8em;
+  }
+  &__text {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+}
+
+a {
+  margin-top: 1em;
+  text-decoration: none;
+  color: white;
+  width: 158px;
+  background: rgb(230, 46, 46);
+  padding: 0.8em 1.4em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  img {
+    text-align: center;
+    margin-right: 0.5em;
+  }
+}
+
+a:hover {
+  background: orange;
+}
+button:active {
+  background-color: rgb(0, 179, 255);
+}
