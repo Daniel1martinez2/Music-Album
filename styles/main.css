@@ -24,7 +24,9 @@ body {
 .album {
   padding: 1em;
   width: 650px;
-  background: #252429;
+  min-height: 650;
+  background: -webkit-gradient(linear, left top, right top, from(#2e2e2e), to(#151515));
+  background: linear-gradient(90deg, #2e2e2e 0%, #151515 100%);
   border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,23 +51,23 @@ body {
   border: 1px dashed #c9c9c9;
   border-right: none;
   border-left: none;
-}
-
-.album footer {
   position: relative;
 }
 
 .album__description {
-  width: 60%;
+  width: 100%;
   padding: 1em 0;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+}
+
+.album__only-text {
+  width: 60%;
 }
 
 .album__img {
-  max-width: 200px;
-  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 .album__released {
@@ -82,9 +84,9 @@ a {
   margin-top: 1em;
   text-decoration: none;
   color: white;
-  width: 158px;
+  width: 180px;
   background: #e62e2e;
-  padding: 0.8em 1.4em;
+  padding: 0.7em 1.4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +101,7 @@ a {
 a img {
   text-align: center;
   margin-right: 0.5em;
+  width: 2.5em;
 }
 
 a:hover {
